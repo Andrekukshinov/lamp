@@ -1,0 +1,39 @@
+<p>countries-rooms works!</p>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col"></th><!--sortable="name"--> <!--(sort)="onSort($event)">Country-->
+    <!--    <th scope="col" sortable="area" (sort)="onSort($event)">Area</th>-->
+    <!--    <th scope="col" sortable="population" (sort)="onSort($event)">Population</th>-->
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let room of rooms">
+    <th scope="row">{{ room.id }}</th>
+    <td>{{ room.roomName }}</td>
+    <td>{{ room.country.countryName }}</td>
+    <td>
+      <button>
+        <a (click)="getEnteredRoom(room.id)" [routerLink]="['room',room.id]">Enter room</a>
+      </button>
+    </td>
+  </tr>
+  </tbody>
+  <hr>
+  <hr>
+  <hr>
+  <hr>
+  <hr>
+  <tr *ngFor="let room of roomsViaLamp">
+    <th scope="row">{{ room.id }}</th>
+    <td>{{ room.roomName }}</td>
+    <td>{{ room.country.countryName }}</td>
+    <td>
+      <button>
+        <a (click)="getEnteredRoom(room.id)" [routerLink]="['room',room.id]">Enter room</a>
+      </button>
+    </td>
+  </tr>
+</table>
+<button routerLink="room/create"> create a new room</button>

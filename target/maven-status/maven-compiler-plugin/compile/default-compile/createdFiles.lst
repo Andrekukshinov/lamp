@@ -1,0 +1,11 @@
+kukshinov\application\lamp\controller\RoomController$1.class
+kukshinov\application\lamp\ws\WebSocketConfig.class
+kukshinov\application\lamp\entity\Country.class
+kukshinov\application\lamp\controller\RoomController.class
+kukshinov\application\lamp\controller\SockController.class
+kukshinov\application\lamp\entity\Room.class
+kukshinov\application\lamp\repository\CountryRepo.class
+kukshinov\application\lamp\repository\LampRepo.class
+kukshinov\application\lamp\RoomsApplication.class
+kukshinov\application\lamp\entity\Lamp.class
+kukshinov\application\lamp\repository\RoomRepo.class

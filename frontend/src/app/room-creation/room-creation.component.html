@@ -1,0 +1,18 @@
+<p>room-creation works!</p>
+<form [formGroup]="roomForm">
+  <mat-form-field>
+    <input placeholder="Set room name" matInput formControlName="roomName">
+  </mat-form-field>
+</form>
+<!--  <mat-form-field>-->
+<mat-form-field class="demo-full-width" appearance="fill">
+  <mat-label>Choose one</mat-label>
+  <label> Choose country
+    <select [(ngModel)]="selectedValue">
+      <option *ngFor="let  country of countries" [defaultSelected]="country" [ngValue]="country">{{country.countryName}}</option>
+    </select>
+  </label>
+</mat-form-field>
+
+<button (click)="createRoom()">submit me</button>
+<button routerLink="/">Cancel changes and quit</button>
